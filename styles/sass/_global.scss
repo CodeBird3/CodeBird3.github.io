@@ -1,0 +1,75 @@
+// stripping styles
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+// FONT VARIABLES
+$mainHeadingFont: 'Parisienne', cursive;
+$headingFont: 'Raleway', sans-serif;
+$bodyFont: 'Rubik', sans-serif;
+
+// COLOUR VARIABLES
+$primary: #2f4858; // dark slate grey
+$secondary: #ffffff; // white
+$accent1: #d4af37; // gold
+$accent2: #008080; // teal
+$accent3: #40c9a2; // eucalyptus
+$accent4: #a3f7b5; // teal deer
+$accent5: #e5f9e0; // nyanza
+$accent6: #8edce6; // medium sky blue
+
+
+body {
+    // NOTE originally in the header @ 80vh
+    background: linear-gradient(to bottom right, $accent2 5%, $accent3 20%, $accent4 30%, $accent5 40% 48%, $accent1 48% 49%, $primary 49%, $secondary 50%);
+    background-repeat: no-repeat;
+    background-size: 100vw 90vh;
+    font-family: $bodyFont;
+    font-size: 1.6rem;
+    color: $primary;
+}
+
+h1 {
+    font-family: $mainHeadingFont;
+    font-size: 8rem;
+    letter-spacing: -2px;
+    line-height: 0;
+}
+
+h2 {
+    font-family: $headingFont;
+    font-style: italic;
+}
+
+main {
+    min-height: calc(60vh - 40px);
+}
+
+footer {
+    background: $accent2;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+
+    a {
+        text-decoration: none;
+        text-shadow: 1px 1px 1px $primary;
+        color: $secondary;
+        padding: 10px;
+
+        &:hover, &:focus {
+            color: $accent6;
+        }
+    }
+}

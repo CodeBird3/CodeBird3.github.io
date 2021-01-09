@@ -1,4 +1,6 @@
-body {
-    background: linear-gradient(to bottom right, #008080 5%, #40c9a2 20%, #a3f7b5 30%, #e5f9e0 40% 48%, #d4af37 48% 49%, #2f4858 49%, #ffffff 50%);
+// setup and global styles
+@import "setup";
+@import "global";
 
-}
+// body styles
+@import "header";
